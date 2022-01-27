@@ -21,7 +21,7 @@ public class MarkdownParse {
                 if(check.contains("(")){
                     shatter = false;
                     openParen = markdown.indexOf("(", openParen+1);
-                    break;
+                    //break;
                 }
             }
             toReturn.add(markdown.substring(openParen + 1, closeParen));
