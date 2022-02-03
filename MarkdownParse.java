@@ -28,8 +28,8 @@ public class MarkdownParse {
             if(closeParen == -1){
                 break;
             }
-            boolean shatter = true;
-            Onumber++;
+            // boolean shatter = true;
+            // Onumber++;
             // while(shatter == true || Onumber < 1000){
             //     String check = markdown.substring(openParen+1, closeParen);
             //     if(check.contains("(")){
