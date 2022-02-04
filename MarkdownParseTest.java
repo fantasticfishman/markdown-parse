@@ -36,7 +36,8 @@ public class MarkdownParseTest {
     public void test3() throws IOException {
       String s = Files.readString(Path.of("test3.md"));
       ArrayList<String> check = MarkdownParse.getLinks(s);
-      List expected = List.of("");
+      ArrayList<String> expected = new ArrayList<>();
+      expected.add("");
       assertEquals(expected, check);
     }
 
@@ -44,7 +45,7 @@ public class MarkdownParseTest {
     public void test4() throws IOException {
       String s = Files.readString(Path.of("test4.md"));
       ArrayList<String> check = MarkdownParse.getLinks(s);
-      List expected = List.of("");
+      List<String> expected = List.of("");
       assertEquals(expected, check);
     }
 

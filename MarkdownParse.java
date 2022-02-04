@@ -14,19 +14,27 @@ public class MarkdownParse {
         while(currentIndex < markdown.length() && Onumber <1000) {
             int nextOpenBracket = markdown.indexOf("[", currentIndex);
             if(nextOpenBracket == -1){
-                break;
+                //break;
+                System.out.println("invalid input");
+                return null;
             }
             int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
             if(nextCloseBracket == -1){
-                break;
+                //break;
+                System.out.println("invalid input");
+                return null;
             }
             int openParen = markdown.indexOf("(", nextCloseBracket);
             if(openParen == -1){
-                break;
+                //break;
+                System.out.println("invalid input");
+                return null;
             }
             int closeParen = markdown.indexOf(")", openParen);
             if(closeParen == -1){
-                break;
+                //break;
+                System.out.println("invalid input");
+                return null;
             }
             // boolean shatter = true;
             // Onumber++;
